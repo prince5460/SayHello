@@ -11,7 +11,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 __author__ = 'zhou'
 
 app = Flask(__name__)
-app.config.from_pyfile('settings.py')
+app.config.from_object('sayhello.settings')
 app.jinja_env.trim_blocks = True
 app.jinja_env.lstrip_blocks = True
 # app.config['BOOTSTRAP_SERVE_LOCAL'] = True #使用本地bootstrap资源
